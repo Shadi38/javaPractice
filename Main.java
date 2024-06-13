@@ -2,8 +2,15 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int age = 30;        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+        byte age = 30;
+        long viewsCount = 12_233_444_67_899L;
+        double price = 10.3456678;
+        float discount = 10.23F;
+        char letter = 'a';
+        String string = "hjk";
+
+        boolean availability = true;
+
         System.out.println(age);
 
         for (int i = 1; i <= 6; i++) {
