@@ -21,12 +21,15 @@ public class Main {
 //          x=3;
 //          System.out.println(x);
 //          System.out.println(y);
-           Point point1 = new Point(1,2);
-           Point point2 = point1;
-           point1.x = 5;
-        System.out.println(point2.x);
 
+//           Point point1 = new Point(1,2);
+//           Point point2 = point1;
+//           point1.x = 5;
+//        System.out.println(point2.x);
 
+//        String message = new String("Hello");
+          String message = "Hello World!";
+          System.out.println(message);
 
 
 
