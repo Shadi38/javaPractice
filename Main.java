@@ -28,11 +28,23 @@ public class Main {
 //        System.out.println(point2.x);
 
 //        String message = new String("Hello");
-          String message = "Hello World!" + "!!";
+          String message = "  HELLO World" + "!!  ";
           System.out.println(message);
           //using the endsWith and startsWith method of the String class and returns boolean
         System.out.println(message.endsWith("!!"));
         System.out.println(message.startsWith("!!"));
+        System.out.println(message.length());
+        System.out.println(message.indexOf("H"));
+//        return -1 if the caracter doesn't exist in message'
+        System.out.println(message.lastIndexOf("w"));
+        //replace method doesn't change the original message and return the new string
+        System.out.println(message.replace("!", "*"));
+        System.out.println(message);
+        //the lowerCase method doesn't change the original message and return the new string
+        System.out.println(message.toLowerCase());
+        //with trim method we can get rid of extra white spaces that can
+        // be at the beginning or at the end of string
+        System.out.println(message.trim());
 
 
     }
