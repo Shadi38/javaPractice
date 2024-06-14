@@ -28,9 +28,11 @@ public class Main {
 //        System.out.println(point2.x);
 
 //        String message = new String("Hello");
-          String message = "Hello World!";
+          String message = "Hello World!" + "!!";
           System.out.println(message);
-
+          //using the endsWith and startsWith method of the String class and returns boolean
+        System.out.println(message.endsWith("!!"));
+        System.out.println(message.startsWith("!!"));
 
 
     }
