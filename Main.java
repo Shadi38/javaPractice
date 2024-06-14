@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -15,17 +16,19 @@ public class Main {
 //        boolean availability = true;
 //        Date now = new Date();
 //        System.out.println(now);
-byte x=1;
-byte y=x;
-x=3;
-        System.out.println(x);
-        System.out.println(y);
+//          byte x=1;
+//          byte y=x;
+//          x=3;
+//          System.out.println(x);
+//          System.out.println(y);
+           Point point1 = new Point(1,2);
+           Point point2 = point1;
+           point1.x = 5;
+        System.out.println(point2.x);
 
 
-        for (int i = 1; i <= 6; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+
+
     }
 }
