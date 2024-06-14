@@ -35,7 +35,7 @@ public class Main {
         System.out.println(message.startsWith("!!"));
         System.out.println(message.length());
         System.out.println(message.indexOf("H"));
-//        return -1 if the caracter doesn't exist in message'
+//        return -1 if the character doesn't exist in message'
         System.out.println(message.lastIndexOf("w"));
         //replace method doesn't change the original message and return the new string
         System.out.println(message.replace("!", "*"));
@@ -45,6 +45,27 @@ public class Main {
         //with trim method we can get rid of extra white spaces that can
         // be at the beginning or at the end of string
         System.out.println(message.trim());
+        //adding "" to string
+        String name = "Shadi \"Fakhri\"";
+        System.out.println(name);
+        //adding \ to our string. for example: \window\...
+        String directory = "\\window\\...";
+        System.out.println(directory);
+        //adding new line with \n
+        String text = "Hello World\nI am Shadi";
+        System.out.println(text);
+        //adding tab(fasele) \t
+        String link = "https://github.com\t/Shadi";
+        System.out.println(link);
+        //array
+//        int[] numbers = new int[5];
+//        numbers[0] = 1;
+//        numbers[1] = 2;
+        int[] numbers = {1,2,3,4,5};
+        System.out.println(numbers);//it shows the address of array in memory
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(numbers.length);
+
 
 
     }
