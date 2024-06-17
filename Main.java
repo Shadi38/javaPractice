@@ -1,3 +1,4 @@
+import java.text.NumberFormat;
 import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -151,6 +152,17 @@ public class Main {
         System.out.println(ggggg);
         int ff=(int)(Math.random()*100);
         System.out.println(ff);
+
+        //formatting numbers  ---- when we use formating number,  java.text package will be inserted on top of the page
+        // and we can use one of the classes which is NumberFormat
+        //sometimes we need to format number as currency value --> 1234567  ==> $ 1,234,567 or  0.1  ==>  10%
+        //NumberFormat currency = new NumberFormat(); //we have error chon numberFormat is abstract and we can't write this code
+        // and we can not create an operator and make an instance of them
+        String resultt=NumberFormat.getCurrencyInstance().format(1234567);
+        System.out.println(resultt);
+        String result= NumberFormat.getPercentInstance().format(0.2);
+        System.out.println(result);
+
 
 
 
