@@ -126,6 +126,40 @@ public class Main {
         double p= Double.parseDouble(o) + 2;
         System.out.println(p);
 
+        //Math class
+        //round
+        int v= Math.round(2.3F);
+        System.out.println(v);
+        //ceil --> adad ro be adade balatar rond mikone.for example 2.1 --> 3
+        //this method(ceil) returns double
+        //dar example zir bayad natije Math.ceil ro tabdil be integer bekonim chon y int ast
+        int q=(int) Math.ceil(2.3F);
+        System.out.println(q);//result would be 3
+        //floor--> kamtar ya mosavi adad. for example: 3.2 --> 3
+        int qq=(int) Math.floor(2.3F);
+        System.out.println(qq);//result 2
+        //max and min
+        int qqq=Math.max(2,5);//result 5
+        //random --> returns double between 0 t0 1
+        double gg=Math.random();
+        //if i want to have random number between 0 to 100 should * 100
+        double ggg=Math.random()*100;
+        System.out.println(ggg);//result with ashar
+        double gggg=Math.floor(Math.random()*100);
+        System.out.println(gggg);
+        int ggggg=(int)Math.floor(Math.random()*100);
+        System.out.println(ggggg);
+        int ff=(int)(Math.random()*100);
+        System.out.println(ff);
+
+
+
+
+
+
+
+
+
 
 
     }
