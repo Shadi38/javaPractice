@@ -1,5 +1,7 @@
 import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Scanner;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -163,7 +165,14 @@ public class Main {
         String result= NumberFormat.getPercentInstance().format(0.2);
         System.out.println(result);
 
-
+        //reading input from user
+        //for reading data(we have to specify where we gana read data from. terminal or a file)
+        //for reading data from terminal, we use this class => System.in
+        Scanner scanner = new Scanner(System.in);
+        //scanner object has bunch of method for reading data and all these method start with next
+        System.out.print("age:");
+        byte age =  scanner.nextByte();
+        System.out.println("you are" + age);
 
 
 
