@@ -173,6 +173,117 @@ public class Main {
         System.out.print("age:");
         byte age =  scanner.nextByte();
         System.out.println("you are" + age);
+        //if we want to have a floating number as a result, we should use
+        //double age = scanner.nextDouble() or float age = scanner.nextFloat()
+
+        //if we want to read string 
+        System.out.print("name:");
+        String name =  scanner.nextLine();
+        System.out.println("you are" + name);
+
+        //mini project:calculating mortgage
+        
+        final byte MONTHS_IN_YEAR = 12;
+        final byte PERCENT = 100;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Prinncipal:");
+        int prinncipal = scanner.nextInt();
+
+        System.out.println("anual Rate:");
+        float monthlyRate = scanner.nextFloat();
+        float monthlyInterest = monthlyRate/PERCENT/MONTHS_IN_YEAR;
+
+        System.out.println("Period (years):");
+        byte years = scanner.nextByte();
+        int numberOfPayment = years * MONTHS_IN_YEAR;
+
+        double mortgage = prinncipal * (monthlyInterest * Math.pow(monthlyInterest+1, numberOfPayment))
+                                       /(Math.pow(monthlyInterest+1, numberOfPayment-1));
+        //we use the NumberFormat class to format the value of mortgage as currency
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage:" + mortgageFormatted);
+
+        //some example of boolean variable
+        int income = 120_000;
+        //below the result is hasHighIncome = true
+        //we can have () around income > 100_000 to show that is boolean => boolean (hasHighIncome = income > 100_000);
+        boolean hasHighIncome = income > 100_000;
+        
+       //Ternary operator:
+
+        // int income2 = 120_000;
+        // String className = "Economy";
+        // if(income > 100_000){
+        //    className = "First";
+        // }
+
+        int income2 = 120_000;
+        String className = income>100_000 ? "First" : "Economy";
+
+        //switch statements:
+        String role = "admin";
+        switch(role){
+                case "admin":
+                        System.out.println("you are an admin");
+                        break;
+                case "user":
+                         System.out.println("you are an user");
+                         break;
+                //if none of above executed, the default will be executed
+                default:
+                        System.out.println("you are an guest");
+
+        }  
+
+        //bizzbuzz project
+        System.out.println("number:");
+        int number = scanner.nextInt();
+        if(number % 5 == 0){
+            if(number % 3 == 0) 
+                System.out.println("FizzBuzz");
+            else
+                System.out.println("Fizz");
+        }else if (number % 3 == 0)
+                System.out.println("Buzz"); 
+         else 
+                System.out.println(number);
+        }
+
+        //for loop:
+        for (int i=0; i<5; i++){
+                System.out.println("Hello")
+        }
+
+        //while loop:
+        //we use while loop when we don't know how many times we want to repeat something
+        int i=0;
+        while(i>0){
+              System.out.println("Hello");
+              i--;  
+        }
+
+        //while in below executed untill user write quit word:
+        String input = "";
+        Scanner scanner = new Scanner(System.in)
+        while (!input.equals("quit")){
+          System.out.println("input:");
+          input = Scanner.next().toLowerCase();
+          if(input.equals("pass"))
+            continue;//continue statement moves control to the begining of the loop.it means java ignore the below lines
+          if(input.equals("quit"))
+            break;//break statement terminates the while loop and exit and won't execute below line
+          System.out.println(input);
+        }
+        
+        //do while loop:
+        //we write above example with do while loop
+        do{
+          System.out.println("input:");
+          input = Scanner.next().toLowerCase();
+          System.out.println(input);
+        }while(!input.equals("quit"))
 
 
 
