@@ -285,7 +285,14 @@ public class Main {
           System.out.println(input);
         }while(!input.equals("quit"))
 
+        //for each loop over array:
+        String[] fruits = {"apple", "kivi", "blubery"}
 
+        for(i=0; i<fruits.length; i++)
+          System.out.println(fruits[i]);
+        //for each: if we don't need the index, it is better to use for each loop instead of for loop
+        for(String fruit:fruits)
+          System.out.println(fruit);
 
 
 
